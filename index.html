@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" media="screen,projection" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"crossorigin="anonymous">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+
+<!-- Dropdown Structure -->
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper  cyan darken-3">
+      <a href="index.html" class="brand-logo  logo-text light  text-lighten-3"><img src="img/logo2.jpg" class="responsive-img logo-img"></a><span
+        class="logo-text-side sub-logo-text light grey-text text-lighten-3 sub-logo-text hide-on-med-and-down">AQUITECTURA &amp; DESIGN</span>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class=" amber" href="index.html">Home</a></li>
+        <li><a href="projects.html">Projectos</a></li>
+        <li><a href="seu_projecto.html">Seu Projecto</a></li>
+        <li><a href="sobre_nos.html">Sobre nos</a></li>
+      </ul>
+    </div>
+    </nav>
+</div>
+
+<!-- side menu Trigger -->
+<ul class="side-nav" id="mobile-demo">
+  <div class="background  side-nav-img">
+    <p class="sid-nav-text logo-text">ArquiLapis</p>
+  </div>
+  <li class="menu-border"><a href="index.html"><i class="fas fa-home teal-text"></i>Home</a></li>
+  <li class="menu-border"><a href="projects.html"><i class="fas fa-tools teal-text"></i>Projects</a></li>
+  <li class="menu-border"><a href="seu projecto.html"><i class="fas fa-leaf teal-text"></i>Seu Projecto</a></li>
+  <li class="menu-border"><a href="sobre nos.html"><i class="far fa-ruler-triangle"></i>Sobre nos</a></li>
+</ul>
+
+<div class="slider fullscreen fix-slide">
+  <ul class="slides">
+    <li>
+      <img src="img/sven-mieke-1162927-unsplash.jpg"> <!-- random image -->
+      <div class="caption right-align">
+        <h3 class="light grey-text text-lighten-3 slide-text">Projectando um Futuro Melhor e saudavel</h3>
+        <h5 class="light grey-text text-lighten-3 slide-text">Para Ti e a Sua Familia</h5>
+      </div>
+    </li>
+    <li>
+      <img src="img/16 CASAS- PROJET. EXT 33.jpg"> <!-- random image -->
+      <div class="caption center-align">
+        <h3 class="light  text-lighten-1 slide-text">Projectos Residencias</h3>
+        <h5 class="light  text-lighten-1 slide-text">Segurnaca &amp; Bem-Estar</h5>
+      </div>
+    </li>
+    <li>
+      <img src="img/16 CASAS- PROJET. INT 01.jpg"> <!-- random image -->
+      <div class="caption right-align">
+        <h3 class="light grey-text text-lighten-3 slide-text">Design Interior</h3>
+        <h5 class="light grey-text text-lighten-3 slide-text">Dando Vida a Tua Abitacao.</h5>
+      </div>
+    </li>
+    <li>
+      <img src="img/RESORT-NELSON TITO ARQ- TRAÇO VIVO 11.jpg"> <!-- random image -->
+      <div class="caption center-align">
+        <h3 class="light  text-lighten-5 slide-text">Projectos Comercias</h3>
+        <h5 class="light  text-lighten-5 slide-text">Lazer &amp; Bem-Estar</h5>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<!--floating button-->
+<div class="fixed-action-btn ">
+<a class="btn-floating btn-large red pulse">
+    <i class="large material-icons">mode_edit</i>
+  </a>
+  <ul>
+    <li><a class="btn-floating green"><i class="material-icons">location_on</i></a></li>
+    <li><a class="btn-floating red"><i class="fab fa-youtube"></i></a></li>
+    <li><a class="btn-floating blue"><i class="fab fa-facebook-f"></i></a></li>
+  </ul>
+</div>
+
+
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <script>
+       $(document).ready(function () {
+
+        $('.carousel.carousel-slider').carousel({ fullWidth: true, indicators: true, duration: 10});
+         autoplay();
+         function autoplay() {
+           $('.carousel').carousel('next');
+           setTimeout(autoplay, 10000);
+         }
+
+$(document).ready(function(){
+$('.slider').slider();
+$(".button-collapse").sideNav();
+});
+        });
+
+
+
+  </script>
+</body>
+
+</html>
